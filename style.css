@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.h100 {
+  height: 100px;
+}
+.h300 {
+  height: 300px;
+}
+.h400 {
+  height: 400px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 1.2em;
+  margin-right: 10px;
+}
+
+.pricing-header {
+  max-width: 700px;
+  padding: 48px 16px 24px;
+  margin: auto;
+}
+
+.display-4 {
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+.lead {
+  text-align: center;
+}
+
+div.container {
+  max-width: 960px;
+}
+
+.card-deck {
+  display: flex;
+  margin-bottom: 1em !important;
+  justify-content: space-between;
+}
+
+.card-deck .card {
+  min-width: 220px;
+}
+.card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  margin-right: 15px;
+}
+
+ul.list {
+  padding: 0px;
+}
+
+ul.list li{
+  font-size: 0.9rem;
+}
+
+.card-header {
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+
+.h4 {
+  font-size: 1.5em;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-body li {
+  list-style: none;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  border: 1px solid transparent;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  background-color: transparent;
+  background-image: none;
+  border-color: #007bff;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.border-top {
+  border-top: 1px solid #dee2e6 !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.table-responsive {
+  max-width: 960px;
+  margin: auto;
+}
+.table {
+  --bs-table-color: var(--bs-body-color);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--bs-border-color);
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: var(--bs-body-color);
+  --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+  --bs-table-active-color: var(--bs-body-color);
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: var(--bs-body-color);
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  width: 100%;
+  margin-bottom: 1rem;
+  color: var(--bs-table-color);
+  vertical-align: top;
+  border-color: var(--bs-table-border-color);
+}
+svg.bi {
+  vertical-align: -.125em;
+  color: #212529;
+}
+
+.display-6 {
+  text-align: center!important;
+  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+footer {
+  max-width: 960px;
+}
+footer.border-top {
+  margin: 48px 0px;
+  padding: 48px 20px 0px;
+  color: #212529;
+  margin: auto;
+}
+
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+div.col-12.col-md {
+  width: 100%;
+  padding: 0px 15px;
+}
+
+img.mb-2 {
+  margin: 0px 0px 8px;
+}
+small.d.block .text-muted {
+  margin: 0px 0px 16px;
+  font-size: 80%;
+  font-weight: 400;
+}
+
+
+@media screen and (max-width:768px) {
+  footer.border-top {
+    text-align: center;
+  }
+ 
+}
+@media screen and (max-width: 750px) {
+  .card-deck{
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+}
+
+@media screen and (max-width: 490px) {
+  thead th {
+    font-size: .8rem;
+  }
+
+  th.text-start{
+    font-size: .73rem;
+  }
+}
+@media screen and (max-width: 425px) {
+  header {
+    flex-direction: column;
+  }
+  header h2 {
+    margin: auto;
+  }
+  nav a {
+    font-size: 1em;
+  }
+}
